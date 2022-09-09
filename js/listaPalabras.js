@@ -12,4 +12,11 @@ export let listaPalabras = [
   "CARABANA",
   "BIZCOCHO",
   "TEFONO",
+  "CALABAZA",
+  "CALLE",
+  "CAMION",
+  "BICICLETA",
+  "MUNDO",
+  "MATRIZ",
+  "FELPUDO",
 ];
