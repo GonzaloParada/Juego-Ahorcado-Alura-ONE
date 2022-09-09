@@ -4,9 +4,13 @@ Juego Ahorcado para Challange nº2 de Alura Latam - Oracle ONE
 
 <img src="./assets/img/preview-pagina.PNG" alt="preview-página" />
 
+## Enlace
+
+https://gonzaloparada.github.io/Juego-Ahorcado-Alura-ONE/
+
 ## 💡 Descripción
 
-Este desafío consiste en crear el juego del ahorcado. Se presenta un menú inicial donde se puede elegir entre iniciar el juego o añadir una palabra a la lista. 
+Este desafío consiste en crear el juego del ahorcado. Se presenta un menú inicial donde se puede elegir entre iniciar el juego o añadir una palabra a la lista.
 
 ## ✔️ Requisitos:
 
@@ -20,5 +24,6 @@ Este desafío consiste en crear el juego del ahorcado. Se presenta un menú inic
 - Las letras equivocadas deben aparecer en la pantalla, pero no pueden aparecer de forma repetida;
 - Las letras correctas deben aparecer en la pantalla encima de los guiones, en la posición correcta en relación a la palabra.
 
-**EXTRA** 
+**EXTRA**
+
 - La página debe tener un campo para inserción de texto con la finalidad de adicionar nuevas palabras al juego, e un botón "Agregar palabra".
