@@ -1,0 +1,15 @@
+export let listaPalabras = [
+  "TIERRA",
+  "COMPUTO",
+  "ESPACIO",
+  "LIBERTAD",
+  "ESPERANZA",
+  "CARRITO",
+  "ESPADA",
+  "NAVE",
+  "HERRERO",
+  "HERRADURA",
+  "CARABANA",
+  "BIZCOCHO",
+  "TEFONO",
+];

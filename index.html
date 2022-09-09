@@ -4,7 +4,114 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Juego ahorcado</title>
+
+    <!--fontawesome-->
+    <script
+      src="https://kit.fontawesome.com/330a31a2d3.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png" />
+    <title>Juego ahorcado | Alura</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body></body>
+
+  <body>
+    <header>
+      <div>
+        <img src="./assets/img/logo.png" alt="Logo-Alura" />
+      </div>
+      <img
+        src="./assets/img/icono-reglas.png"
+        alt="reglas-de-juego"
+        class="icono-reglas"
+      />
+    </header>
+
+    <main>
+      <section class="seccion-menu">
+        <div class="btn-container">
+          <button class="btn btn-juego">INICIAR JUEGO</button>
+          <button class="btn btn-agregar btn-2">AGREGAR NUEVA PALABRA</button>
+        </div>
+      </section>
+
+      <section class="seccion-juego">
+        <div class="letras-equivacadas"></div>
+        <div class="dibujo-ahorcado">
+          <canvas width="350" height="350" id="canvas"></canvas>
+        </div>
+
+        <div class="guion-container"></div>
+
+        <div class="btn-container">
+          <button class="btn btn-nuevo-juego">NUEVO JUEGO</button>
+          <button class="btn btn-desistir btn-2">DESISTIR</button>
+        </div>
+
+        <div class="modal modal-victoria">
+          <h2>Ganaste, felicidades!</h2>
+        </div>
+
+        <div class="modal modal-derrota">
+          <h2>Fin del juego!</h2>
+          <p class="mensaje-perdiste"></p>
+        </div>
+      </section>
+
+      <div class="modal modal-reglas">
+        <h2>Reglas</h2>
+        <p> El juego del ahorcado consiste en adivinar la palabra secreta. Deberá elegir letras que crea que estén contenidas en la palabra hasta formar dicha palabra para poder ganar. Pero por cada letra que elija y no se encuentre en la palabra secreta, una extremidad del hangman será adherida. El juego termina o bien cuando aciertas la palabra o cuando el hangman tiene su cuerpo entero.
+          Suerte!</p>
+        <div class="btn-modal-cerrar">X</div> 
+      </div>
+    </section>
+      
+      <section class="seccion-agregar">
+        <input
+          type="text"
+          class="input-nueva-palabra"
+          placeholder="agregue palabra"
+          maxlength="10"
+        />
+        <p>máx. 10 letras</p>
+        <div class="btn-container">
+          <button class="btn btn-guardar">GUARDAR Y EMPEZAR</button>
+          <button class="btn btn-volver-inicio btn-2">CANCELAR</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Challange 2 Alura - Oracle ONE | realizado por gonzalo</p>
+      <ul class="contact-icons">
+        <li>
+          <a href="https://www.linkedin.com/in/gonzalo-parada/" target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/gonzaparada/" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://github.com/GonzaloParada" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="./js/main.js" type="module"></script>
+  </body>
 </html>
